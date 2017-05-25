@@ -32,8 +32,8 @@ gfsh -e "connect --locator=localhost[10334]" -e "list regions"
 
 gfsh -e "connect --locator=localhost[10334]" -e "import gpdb --region=/basic"
 
-gfsh -e "connect --locator=localhost[10334]" -e "query --query=\"select id.toString() as id, col1, col2 from /basic\""
+gfsh -e "connect --locator=localhost[10334]" -e "query --query=\"select id.toString() as id, col1, col2.toString()  from /basic\""
 
-gfsh -e "connect --locator=localhost[10334]" -e "query --query=\"select count(*) from /basic\""
+gfsh -e "connect --locator=localhost[10334]" -e "query --query=\"select * from /basic\""
 
 exit 0

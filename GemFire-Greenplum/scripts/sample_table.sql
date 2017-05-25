@@ -1,26 +1,18 @@
 drop table if exists basic;
 create table basic (	
-	id	bigint,
+	id    bigint,
 	col1 	text,
-	col2	float4
+	col2	Int,
+	col3    Varchar
 ) distributed by (id);		
  
 
-INSERT INTO basic VALUES (1, 'TEXT_1',  1.0);
-INSERT INTO basic VALUES (2, 'TEXT_2',  2.0);
-INSERT INTO basic VALUES (4, 'TEXT_3',  3.0);
-INSERT INTO basic VALUES (5, 'TEXT_4',  4.0);
-INSERT INTO basic VALUES (6, 'TEXT_5',  5.0);
+INSERT INTO basic(id, col1, col2, col3)  VALUES (1, 'TEXT_1',  10, 'ABC');
+INSERT INTO basic(id, col1, col2, col3)  VALUES (2, 'TEXT_2',  20, 'ABCD');
+INSERT INTO basic(id, col1, col2, col3)  VALUES (4, 'TEXT_3',  30, 'ABCDE');
+INSERT INTO basic(id, col1, col2, col3)  VALUES (5, 'TEXT_4',  40, 'ABCDEF');
+INSERT INTO basic(id, col1, col2, col3)  VALUES (6, 'TEXT_5',  50, 'ABCDEFG');
 
 
-drop table if exists basic2;
-create table basic2 (	
-	id	bigint,
-	coltext 	text,
-	coldatetime	Date
-) distributed by (id);		
- 
 
-INSERT INTO basic2 (id, coltext, coldatetime) VALUES (1, 'San Francisco', '1994-11-29');
-INSERT INTO basic2 (id, coltext, coldatetime) VALUES (2, 'San Jose', '2004-11-29');
-INSERT INTO basic2 (id, coltext, coldatetime) VALUES (3, 'San Mateo', '2014-11-29');
+

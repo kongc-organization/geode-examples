@@ -33,14 +33,13 @@ the example demonstrates this.
 
 This example also uses a Greenplum cluster with two segment nodes. The GemFire-Greenplum connector can parallelize the data transfer between GemFire and Greenplum. Therefore, it provides a high speed data throughput, compared to data transfer via a typical JDBC connector. 
 
-
+Alternatively, you can view the [screencast](Screencast.md)
 
 # Assumptions
-* This example assumes that Java and Geode/GemFire are installed. 
-
-* You will need to download GemFire-Greenplum connector from https://network.pivotal.io/products/pivotal-gemfire.  The gemfire-greenplum-3.0.0.jar should be copied to ```geode-examples/GemFire-Greenplum/```
-
 * This example assumes you have docker-compose preinstalled
+* Download GemFire-Greenplum connector from https://network.pivotal.io/products/pivotal-gemfire.  The gemfire-greenplum-3.0.0.jar should be copied to ```geode-examples/GemFire-Greenplum/```
+
+
 
 
 ## Demonstration of GemFire-Greenplum connector

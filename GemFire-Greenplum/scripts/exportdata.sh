@@ -34,8 +34,9 @@ psql -h ${GREENPLUM_HOST} -U ${GREENPLUM_USER} -d ${GREENPLUM_DB} -c "select cou
 
 
 gfsh -e "connect --locator=localhost[10334]" -e "export gpdb --region=/basic  --type=UPSERT"
-"export gpdb --region=/basic --type=UPSERT"
-psql -h ${GREENPLUM_HOST} -U ${GREENPLUM_USER} -d ${GREENPLUM_DB} -c "select count(*) from basic"
+
+
+#psql -h ${GREENPLUM_HOST} -U ${GREENPLUM_USER} -d ${GREENPLUM_DB} -c "select count(*) from basic"
 
 
 exit 0
